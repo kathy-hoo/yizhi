@@ -1,0 +1,15 @@
+<!-- pages/profile/profile.wxml -->
+<view class='bg'></view>
+
+  <view class="userinfo">
+    <image class="avatar" src="{{avatarUrl}}" background-size="cover"></image>
+    <text class="nickname">{{nickName}}</text>
+  </view>
+
+ <view class='list' >
+    <navigator class="line" wx:for='{{list}}' wx:key='index' url="{{item.page}}">
+      <image class="label" src='{{item.img}}'></image>
+      <text class="title">{{item.title}}</text>
+      <image class="arrow" src="/assets/profile/more.png"></image>
+    </navigator>
+  </view>

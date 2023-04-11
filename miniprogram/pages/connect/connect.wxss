@@ -1,0 +1,34 @@
+/* pages/connect/connect.wxss */
+.putbox{
+  border: 2rpx solid #8bbd5e;
+  margin: 100rpx 50rpx 20rpx 50rpx;
+  padding: 20rpx;
+  border-radius: 50rpx
+}
+input{
+  text-align: center
+}
+.btn{
+  background: #8bbd5e;
+  color: #fff;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  margin: 0 50rpx;
+  border-radius: 50rpx
+  /* border:2rpx solid #8bbd5e */
+}
+.scan{
+  width: 20%;
+  margin: 200rpx 300rpx 0 300rpx;
+  /* background: navajowhite */
+}
+.scan image{
+  width: 100%
+}
+.tip{
+  text-align: center;
+  font-size: 30rpx
+}

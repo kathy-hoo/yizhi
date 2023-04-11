@@ -1,0 +1,77 @@
+<!--pages/plant_detail/plant_detail.wxml-->
+<image class="planting" src="{{plant.url}}"></image>
+<view class="head">
+  <view class="NO">{{plant.NO}}</view>
+  <view class="name">{{plant.name}}</view>
+  <view class="device yes" wx:if='{{plant.isDevice}}' bindtap="handleDevice" data-id="{{plant._id}}">设备已连接</view>
+  <view class="device no" wx:else bindtap="handleDevice" data-id="{{plant._id}}">设备未连接</view>
+</view>
+<block wx:if='{{plant.isDevice}}'>
+  <view class="click">
+    <view bindtap="handleman" data-id="{{plant._id}}">手动操作</view>
+    <view bindtap="handleauto" data-id="{{plant._id}}">自动操作</view>
+    <view bindtap="handlelog" data-id="{{plant._id}}">操作日志</view>
+  </view>
+  <view class="plantdetail">
+    <view class="detail_item">
+      <view class="title">
+        <text>温度</text>
+        <image src="/assets/plant_detail/temp.png" mode="widthFix"></image>
+      </view>
+      <view class="data">{{plant.tempeture}}
+        <text> ℃</text>
+      </view>
+    </view>
+    <view class="detail_item">
+      <view class="title">
+        <text>湿度</text>
+        <image src="/assets/plant_detail/hum.png" mode="widthFix"></image>
+      </view>
+      <view class="data">{{plant.moisture}}
+        <text> %</text>
+      </view>
+    </view>
+    <view class="detail_item">
+      <view class="title">
+        <text>光照强度</text>
+        <image src="/assets/plant_detail/light.png" mode="widthFix"></image>
+      </view>
+      <view class="data">{{plant.light}}
+        <text> Lux</text>
+      </view>
+    </view>
+    <view class="detail_item">
+      <view class="title">
+        <text>PH</text>
+        <image src="/assets/plant_detail/ph.png" mode="widthFix"></image>
+      </view>
+      <view class="data">{{plant.ph}}</view>
+    </view>
+    <view class="detail_item">
+      <view class="title">
+        <text>EC</text>
+        <image src="/assets/plant_detail/ec.png" mode="widthFix"></image>
+      </view>
+      <view class="data">{{plant.ec}}
+        <text> mS/cm</text>
+      </view>
+    </view>
+    <view class="detail_item">
+      <view class="title">
+        <text>土壤水分</text>
+        <image src="/assets/plant_detail/water.png" mode="widthFix"></image>
+      </view>
+      <view class="data">{{plant.water}}
+        <text> %</text>
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="null">
+    <view class="img">
+      <image src="/assets/plant/tip.png" mode="widthFix"></image>
+    </view>
+    <view class="word">先去连接设备吧</view>
+  </view>
+</block>

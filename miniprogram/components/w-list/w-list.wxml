@@ -1,0 +1,16 @@
+<!--components/w-list/w-list.wxml-->
+<block wx:if="{{list}}">
+  <block wx:for='{{list}}' wx:key='index'>
+    <view class="item">
+      <image class="image" src="{{item.url}}" mode="widthFix"></image>
+      <view class="id">{{item.NO}}</view>
+      <view class="name">{{item.name}}</view>
+      <image class="option" src="/assets/plant/change.png" mode="widthFix" bindtap="handleChange"></image>
+      <image class="option delete" src="/assets/plant/delete.png" mode="widthFix" bindtap="handleDelete"></image>
+      <view class="mode" bindtap="handleMode">切换为 手动模式</view>
+    </view>
+  </block>
+</block>
+<block wx:else>
+  <view class='null'>{{content}}</view>
+</block>

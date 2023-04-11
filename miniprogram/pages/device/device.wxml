@@ -1,0 +1,10 @@
+<!--pages/device/device.wxml-->
+<view class="box">
+  <button size="mini" bindtap="handleClick">连接设备</button>
+</view>
+<view class="devlist">
+  <view class="img">
+    <image src="/assets/plant/tip.png" mode="widthFix"></image>
+  </view>
+  <view class="word">快去连接设备吧</view>
+</view>

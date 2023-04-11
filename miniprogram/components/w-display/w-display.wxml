@@ -1,0 +1,7 @@
+<!--components/display/w-display.wxml-->
+<view class="box">
+  <view class="plant" wx:for='{{plant}}' wx:key='index'>
+    <image class="picture" src="{{item.imgurl}}" mode="widthFix"></image>  
+    <view class="name">{{item.name}}</view>
+  </view>
+</view>

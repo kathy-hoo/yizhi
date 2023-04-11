@@ -1,0 +1,65 @@
+.weather{
+  width:100%;
+  height:300rpx;
+  background-color: #8bbd5e;
+  border-bottom-left-radius: 50rpx;
+  border-bottom-right-radius:50rpx;
+  color:#fff;
+}
+.citdat{
+  width:100%;
+  height:20%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.city{
+  width:30%;
+  height:100%;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row; 
+}
+.location{
+  width:35rpx;
+  /* height:40rpx; */
+  margin-right:10rpx;
+}
+.date{
+  width:60%;
+  height:100%;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weaout{
+  width:100%;
+  height:80%;
+}
+.temperature{
+  width:100%;
+  height:70%;
+  font-size: 65rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weain{
+  width:100%;
+  height:30%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.weatherDesc{
+  width:30%;
+  height:100%;
+  font-size: 35rpx;
+  text-align: center;
+}
+.weain image{
+  width: 54rpx
+}

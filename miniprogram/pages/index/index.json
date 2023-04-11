@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "w-display":"/components/w-display/w-display",
+    "w-calendar":"/components/w-calendar/w-calendar",
+    "w-swiper":"/components/w-swiper/w-swiper"
+  }
+}

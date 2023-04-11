@@ -1,0 +1,34 @@
+<!--pages/plant/plant.wxml-->
+<w-swiper list='{{sp_picture}}'/>
+
+<w-search bindtap='linkToSearch'/>
+
+<view class="plantlist">
+  <view class="title">我的植物</view>
+  <block wx:if="{{isLength}}">
+    <block wx:for='{{plants}}' wx:key='index'>
+      <view class="plant_item">
+        <image class="plant_image" src="{{item.url}}"></image>
+        <view class="plant_id" bindtap="handleDetail" data-id="{{item._id}}">{{item.NO}}</view>
+        <view class="plant_name" bindtap="handleDetail" data-id="{{item._id}}">{{item.name}}</view>
+        <image class="option" src="/assets/plant/change.png" mode="widthFix" bindtap="handleChange" data-id="{{item._id}}"></image>
+        <image class="option delete" src="/assets/plant/delete.png" mode="widthFix" bindtap="handleDelete" data-id="{{item._id}}"></image>
+        <!-- <view class="plant_mode" bindtap="handleMode">切换为 手动模式</view> -->
+      </view>
+    </block>
+  </block>
+  <block wx:else>
+    <view class='null'>
+      <view class="img">
+        <image src="/assets/plant/tip.png" mode="widthFix"></image>
+      </view>
+      <view class="word">快去添加植物吧</view>
+    </view>
+  </block>
+  <view class="bottom"></view>
+</view>
+
+<image class="add" src="/assets/plant/add.png" mode="widthFix" bindtap="handleAdd"></image>
+
+
+

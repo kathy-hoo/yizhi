@@ -1,0 +1,25 @@
+<!--pages/log/log.wxml-->
+<block wx:if='{{length>0}}'>
+<block wx:for='{{logs}}' wx:key='index'>
+  <view class="log">
+    <view class="time">{{item.time}}</view>
+    <view class="content">
+      <view class="option">{{item.temlog}}</view>
+      <view class="option">{{item.moilog}}</view>
+      <view class="option">{{item.lgtlog}}</view>
+      <view class="option">{{item.phlog}}</view>
+      <view class="option">{{item.eclog}}</view>
+      <view class="option">{{item.watlog}}</view>
+    </view>
+  </view>
+</block>
+</block>
+<block wx:else>
+  <view class='null'>
+      <view class="img">
+        <image src="/assets/plant/tip.png" mode="widthFix"></image>
+      </view>
+      <view class="word">暂无记录</view>
+    </view>
+</block>
+<image src="/assets/log/clear.png" mode="widthFix" class="clear" bindtap="handleClear"></image>

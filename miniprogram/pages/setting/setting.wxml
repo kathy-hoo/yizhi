@@ -1,0 +1,11 @@
+<!--pages/setting/setting.wxml-->
+<view class="box">
+  <navigator class="list" url="../suggestion/suggestion">
+    <view class="content">意见反馈</view>
+    <image src="/assets/profile/more.png"></image>
+  </navigator>
+  <navigator class="list" url="../about/about">
+    <view class="content">关于易植</view>
+    <image src="/assets/profile/more.png"></image>
+  </navigator>
+</view>

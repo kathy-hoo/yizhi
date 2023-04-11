@@ -1,0 +1,229 @@
+function weatherIcon(weather) {
+  switch (weather) {
+    case '晴':
+      return '/assets/weather/100.png'
+      break;
+    case '多云':
+      return '/assets/weather/101.png'
+      break;
+    case '少云':
+      return '/assets/weather/102.png'
+      break;
+    case '晴间多云':
+      return '/assets/weather/103.png'
+      break;
+    case '晴转多云':
+      return '/assets/weather/103.png'
+      break;
+    case '阴':
+      return '/assets/weather/104.png'
+      break;
+    case '有风':
+      return '/assets/weather/200.png'
+      break;
+    case '平静':
+      return '/assets/weather/201.png'
+      break;
+    case '微风':
+      return '/assets/weather/202.png'
+      break;
+    case '和风':
+      return '/assets/weather/203.png'
+      break;
+    case '清风':
+      return '/assets/weather/204.png'
+      break;
+    case '强风':
+      return '/assets/weather/205.png'
+      break;
+    case '疾风':
+      return '/assets/weather/206.png'
+      break;
+    case '大风':
+      return '/assets/weather/207.png'
+      break;
+    case '烈风':
+      return '/assets/weather/208.png'
+      break;
+    case '风暴':
+      return '/assets/weather/209.png'
+      break;
+    case '狂暴风':
+      return '/assets/weather/210.png'
+      break;
+    case '飓风':
+      return '/assets/weather/211.png'
+      break;
+    case '龙卷风':
+      return '/assets/weather/212.png'
+      break;
+    case '热带风暴':
+      return '/assets/weather/213.png'
+      break;
+    case '阵雨':
+      return '/assets/weather/300.png'
+      break;
+    case '强阵雨':
+      return '/assets/weather/301.png'
+      break;
+    case '雷阵雨':
+      return '/assets/weather/302.png'
+      break;
+    case '强雷阵雨':
+      return '/assets/weather/303.png'
+      break;
+    case '雷阵雨伴有冰雹':
+      return '/assets/weather/304.png'
+      break;
+    case '小雨':
+      return '/assets/weather/305.png'
+      break;
+    case '小雨转阴':
+      return '/assets/weather/305.png'
+      break;
+    case '中雨':
+      return '/assets/weather/306.png'
+      break;
+    case '大雨':
+      return '/assets/weather/307.png'
+      break;
+    case '极端阵雨':
+      return '/assets/weather/308.png'
+      break;
+    case '毛毛雨/细雨':
+      return '/assets/weather/309.png'
+      break;
+    case '暴雨':
+      return '/assets/weather/310.png'
+      break;
+    case '大暴雨':
+      return '/assets/weather/311.png'
+      break;
+    case '特大暴雨':
+      return '/assets/weather/312.png'
+      break;
+    case '冻雨':
+      return '/assets/weather/313.png'
+      break;
+    case '小到中雨':
+      return '/assets/weather/314.png'
+      break;
+    case '中到大雨':
+      return '/assets/weather/315.png'
+      break;
+    case '大到暴雨':
+      return '/assets/weather/316.png'
+      break;
+    case '暴雨到大暴雨':
+      return '/assets/weather/317.png'
+      break;
+    case '大暴雨到特大暴雨':
+      return '/assets/weather/318.png'
+      break;
+    case '雨':
+      return '/assets/weather/399.png'
+      break;
+    case '小雪':
+      return '/assets/weather/400.png'
+      break;
+    case '中雪':
+      return '/assets/weather/401.png'
+      break;
+    case '大雪':
+      return '/assets/weather/402.png'
+      break;
+    case '暴雪':
+      return '/assets/weather/403.png'
+      break;
+    case '雨夹雪':
+      return '/assets/weather/404.png'
+      break;
+    case '雨雪天气':
+      return '/assets/weather/405.png'
+      break;
+    case '阵雨夹雪':
+      return '/assets/weather/406.png'
+      break;
+    case '阵雪':
+      return '/assets/weather/407.png'
+      break;
+    case '小到中雪':
+      return '/assets/weather/408.png'
+      break;
+    case '中到大雪':
+      return '/assets/weather/409.png'
+      break;
+    case '大到暴雪':
+      return '/assets/weather/410.png'
+      break;
+    case '雪':
+      return '/assets/weather/499.png'
+      break;
+    case '薄雾':
+      return '/assets/weather/500.png'
+      break;
+    case '雾':
+      return '/assets/weather/501.png'
+      break;
+    case '霾':
+      return '/assets/weather/502.png'
+      break;
+    case '扬沙':
+      return '/assets/weather/503.png'
+      break;
+    case '浮尘':
+      return '/assets/weather/504.png'
+      break;
+    case '沙尘暴':
+      return '/assets/weather/507.png'
+      break;
+    case '强沙尘暴':
+      return '/assets/weather/508.png'
+      break;
+    case '浓雾':
+      return '/assets/weather/509.png'
+      break;
+    case '强浓雾':
+      return '/assets/weather/510.png'
+      break;
+    case '中度霾':
+      return '/assets/weather/511.png'
+      break;
+    case '重度霾':
+      return '/assets/weather/512.png'
+      break;
+    case '严重霾':
+      return '/assets/weather/513.png'
+      break;
+    case '大雾':
+      return '/assets/weather/514.png'
+      break;
+    case '特强浓雾':
+      return '/assets/weather/515.png'
+      break;
+    case '热':
+      return '/assets/weather/900.png'
+      break;
+    case '冷':
+      return '/assets/weather/901.png'
+      break;
+    case '阴转晴':
+      return '/assets/weather/o2s.png'
+      break;
+    case '多云转晴':
+      return '/assets/weather/o2s.png'
+      break;
+    case '阴转多云':
+      return '/assets/weather/o2c.png'
+      break;
+    case '多云转小雨':
+      return '/assets/weather/c2lr.png'
+      break;
+    default:
+      return '/assets/weather/999.png'
+  }
+}
+
+module.exports = {
+  weatherIcon: weatherIcon
+}

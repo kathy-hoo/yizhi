@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/wea_detail/wea_detail",
+    "pages/plant/plant",
+    "pages/newplant/newplant",
+    "pages/plant_detail/plant_detail",
+    "pages/manual/manual",
+    "pages/auto/auto",
+    "pages/log/log",
+    "pages/search/search",
+    "pages/device/device",
+    "pages/connect/connect",
+    "pages/profile/profile",
+    "pages/information/information",
+    "pages/message/message",
+    "pages/setting/setting",
+    "pages/suggestion/suggestion",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8bbd5e",
+    "navigationBarTitleText": "易植",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#8bbd5e",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home-fill.png"
+      },
+      {
+        "pagePath": "pages/plant/plant",
+        "text": "植物",
+        "iconPath": "assets/tabbar/plant.png",
+        "selectedIconPath": "assets/tabbar/plant-fill.png"
+      },
+      {
+        "pagePath": "pages/device/device",
+        "text": "设备",
+        "iconPath": "assets/tabbar/machine.png",
+        "selectedIconPath": "assets/tabbar/machine-fill.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/tabbar/profile.png",
+        "selectedIconPath": "assets/tabbar/profile-fill.png"
+      }
+    ]
+    
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

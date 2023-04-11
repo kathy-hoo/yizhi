@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "w-swiper": "/components/w-swiper/w-swiper",
+    "w-search": "/components/w-search/w-search"
+  },
+  "navigationBarTitleText": "植物"
+}

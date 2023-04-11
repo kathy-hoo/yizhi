@@ -1,0 +1,20 @@
+/* pages/setting/setting.wxss */
+.box{
+  background: #fff;
+  border-bottom: 2rpx solid #cdcdcd;
+  padding: 0 30rpx
+}
+.list{
+  border-top: 2rpx solid #cdcdcd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx 0
+}
+.list image{
+  width: 30rpx;
+  height: 30rpx
+}
+.content{
+  flex: 1 0 
+}

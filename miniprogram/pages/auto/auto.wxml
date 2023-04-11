@@ -1,0 +1,58 @@
+<!--pages/auto/auto.wxml-->
+<view class="box">
+  <view class="content">土壤温度</view>
+  <!-- <view class="min">下限： -->
+    <w-stepper class='min' num='{{plant.tempeture}}' data-type="{{0}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view>
+  <view class="max">上限： -->
+    <w-stepper class='max' num='{{plant.tempeture}}' data-type="{{0}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view>   -->
+</view>
+<view class="box">
+  <view class="content">土壤湿度</view>
+  <!-- <view class="min">下限： -->
+    <w-stepper class='min' num='{{plant.moisture}}' data-type="{{1}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view>
+  <view class="max">上限： -->
+    <w-stepper class='max' num='{{plant.moisture}}' data-type="{{1}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view>   -->
+</view>
+<view class="box">
+  <view class="content">光照强度</view>
+  <!-- <view class="min">下限： -->
+    <w-stepper class='min' num='{{plant.light}}' data-type="{{2}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view>
+  <view class="max">上限： -->
+    <w-stepper class='max' num='{{plant.light}}' data-type="{{2}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view> -->
+</view>
+<view class="box">
+  <view class="content">土壤酸碱度</view>
+  <!-- <view class="min">下限： -->
+   <w-stepper class='min' num='{{plant.ph}}' data-type="{{3}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view>
+  <view class="max">上限： -->
+    <w-stepper class='max' num='{{plant.ph}}' data-type="{{3}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view> -->
+</view>
+<view class="box">
+  <view class="content">土壤电导率</view>
+  <!-- <view class="min">下限： -->
+   <w-stepper class='min' num='{{plant.ec}}' data-type="{{4}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view>
+  <view class="max">上限： -->
+    <w-stepper class='max' num='{{plant.ec}}' data-type="{{4}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view> -->
+</view>
+<view class="box">
+  <view class="content">土壤水分</view>
+  <!-- <view class="min">
+    <text>下限：</text>  -->
+    <w-stepper class='min' num='{{plant.water}}' data-type="{{5}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view>
+  <view class="max">上限： -->
+    <w-stepper class='max' num='{{plant.water}}' data-type="{{5}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+  <!-- </view> -->
+</view>
+
+<button type="primary" bindtap="handleUpdate">确认</button>

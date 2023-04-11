@@ -1,0 +1,22 @@
+/* components/display/w-display.wxss */
+.box{
+  margin: 20rpx;
+  background: white;
+  border-radius: 50rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20rpx
+}
+.plant{
+  width:23%;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.picture{
+  width:100%
+}
+.name{
+  font-size: 30rpx
+}
+

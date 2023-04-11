@@ -1,0 +1,15 @@
+<!--miniprogram/pages/start/start.wxml-->
+<view class="contionar">
+  <view class="logobox">
+    <view class="logo">
+      <image src="/assets/start/logo.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="name">
+    <text>易 植</text>
+  </view>
+  <view class="btnbox">
+    <button class="btn" wx:if='{{canIUse}}' open-type="getUserInfo" bindgetuserinfo="handleBtnClick" lang="zh_CN">进入应用</button>
+    <view wx:else>请升级微信版本</view>
+  </view>
+</view>

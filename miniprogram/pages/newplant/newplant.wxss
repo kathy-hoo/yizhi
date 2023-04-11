@@ -1,0 +1,61 @@
+/* pages/newplant/newplant.wxss */
+.plantform{
+  border-top: solid 2rpx #cdcdcd;
+  border-bottom: solid 2rpx #cdcdcd;
+  background: white;
+  /* width: 100%;
+  display: flex; 
+  justify-content: center */
+}
+.form_item{
+  margin: 0 20rpx;
+  /* background:darkblue; */
+  display: flex;
+  flex-direction: row;
+  padding:10rpx 0;
+  border-bottom: 2rpx solid #cdcdcd
+}
+.title{
+  color: #8bbd5e;
+  margin-right: 20rpx;
+  /* background: honeydew */
+}
+.form_item input{
+  /* background: darkblue; */
+  font-size: 35rpx
+}
+.form_image{
+  margin: 0 20rpx;
+  padding:10rpx 0;
+  /* background: palegoldenrod */
+}
+.upimg{
+  display: flex;
+  height: 200rpx;
+  align-items: center;
+  justify-content: center;
+}
+.upimg image{
+  width:200rpx;
+  height:200rpx;
+  border-radius: 20rpx;
+  /* border: gold */
+}
+icon{
+  position: relative;
+  bottom: 100rpx;
+  left: 225rpx
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  margin-top:50rpx;
+}
+.comfire{
+  width:100rpx;
+}
+.cancle{
+  width:100rpx;
+  background: red;
+  color: white
+}

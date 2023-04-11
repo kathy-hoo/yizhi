@@ -1,0 +1,7 @@
+<!--pages/message/message.wxml-->
+<view class='null'>
+  <view class="img">
+    <image src="/assets/plant/tip.png" mode="widthFix"></image>
+  </view>
+  <view class="word">暂无消息</view>
+</view>

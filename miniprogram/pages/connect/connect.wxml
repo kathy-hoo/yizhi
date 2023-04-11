@@ -1,0 +1,10 @@
+<!--pages/connect/connect.wxml-->
+<view class="putbox">
+  <input placeholder="请输入设备编号"></input>
+</view>
+<view class="btn">确定</view>
+
+<view class="scan" bindtap="handleScan">
+  <image src="/assets/connect/scan.png" mode="widthFix"></image>
+</view>
+<view class="tip">您也可以扫码快速添加设备</view>

@@ -1,0 +1,120 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "天气详情",
+          "pathName": "pages/wea_detail/wea_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "植物",
+          "pathName": "pages/plant/plant",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "添加植物",
+          "pathName": "pages/newplant/newplant",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "搜索",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 5,
+          "name": "植物详情",
+          "pathName": "pages/plant_detail/plant_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "我的",
+          "pathName": "pages/profile/profile",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "个人信息",
+          "pathName": "pages/information/information",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "设置",
+          "pathName": "pages/setting/setting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 9,
+          "name": "意见反馈",
+          "pathName": "pages/suggestion/suggestion",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "关于",
+          "pathName": "pages/about/about",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "设备",
+          "pathName": "pages/device/device",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "连接设备",
+          "pathName": "pages/connect/connect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "消息",
+          "pathName": "pages/message/message",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "初次登陆",
+          "pathName": "pages/start/start",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-stepper":"../../components/w-stepper/w-stepper"
+  },
+  "navigationBarTitleText": "手动操作"
+}

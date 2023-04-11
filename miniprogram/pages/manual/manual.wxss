@@ -1,0 +1,23 @@
+/* pages/manual/manual.wxss */
+/* .tempeture{
+  height: 300rpx;
+  background: darkblue
+} */
+.box{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #cdcdcd
+}
+button{
+  margin-top: 40rpx
+}
+.content{
+  margin-left: 30rpx
+}
+.stepper{
+  margin-right: 30rpx;
+}
+

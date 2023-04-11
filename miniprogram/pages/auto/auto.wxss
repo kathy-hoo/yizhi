@@ -1,0 +1,26 @@
+/* pages/auto/auto.wxss */
+.box{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #cdcdcd
+}
+button{
+  margin-top: 40rpx
+}
+.content{
+  margin-left: 30rpx;
+  width: 40%
+}
+.min{
+  width: 30%
+}
+.max{
+  width: 30%;
+  margin-right: 30rpx
+}
+/* .stepper{
+  margin-right: 30rpx;
+} */

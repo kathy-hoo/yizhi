@@ -1,0 +1,26 @@
+<!--pages/information/information.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='form_content'>
+    <view class="item">
+      <view class='text'>姓名</view>
+      <input style='display:none' name="id" value='{{information._id}}'></input>
+      <input name='name' value='{{information.name}}' placeholder="请输入姓名" />
+    </view>
+    <view class="item">
+      <view class='text'>年龄</view>
+      <input name='age' value='{{information.age}}' placeholder="请输入年龄" />
+    </view>
+    <view class="item">
+      <view class='text'>手机号码</view>
+      <input name='phone' value='{{information.phone}}' placeholder="请输入电话号码" />
+    </view>
+    <view class="item">
+      <view class='text'>邮件地址</view>
+      <input name='email' value='{{information.email}}' placeholder="请输入邮件地址" />
+    </view>
+  </view>
+  <view class='btn'>
+    <button size='mini' type='primary' form-type='submit' class='comfire'>确认</button>
+    <button size='mini' form-type='reset' class='cancle'>清除</button>
+  </view>
+</form>

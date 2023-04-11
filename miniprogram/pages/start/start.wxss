@@ -1,0 +1,37 @@
+/* miniprogram/pages/start/start.wxss */
+page{
+  background: white
+}
+.logobox{
+  height: 500rpx;
+  /* background: rebeccapurple; */
+  display: flex; 
+  /* align-items: center; */
+  justify-content: center
+}
+.btnbox{
+  height: 150rpx;
+  margin-top: 300rpx;
+}
+.logo{
+  width: 300rpx;
+  height: 300rpx;
+  /* background: red; */
+  margin-top: 200rpx;
+}
+.logo image{
+  width:300rpx;
+  
+}
+.name{
+  font-family: '华文中宋';
+  font-size: 80rpx;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center
+}
+.btn{
+  background: #8bbd5e;
+  color: white;
+  border-radius: 100rpx;
+}

@@ -1,0 +1,28 @@
+<!--pages/manual/manual.wxml-->
+<!-- <w-stepper num='{{plant.tempeture}}' data-type="{{0}}" bind:minusClick='handleMinus' bind:plusClick='handlePlus' bind:manualClick='handleManual'/>   -->
+<view class="box">
+  <view class="content">调节温度</view>
+  <w-stepper class='stepper' num='{{tempeture}}' data-type="{{0}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+</view>
+<view class="box">
+  <view class="content">调节湿度</view>
+  <w-stepper class='stepper' num='{{moisture}}' data-type="{{1}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+</view>
+<view class="box">
+  <view class="content">调节光照强度</view>
+  <w-stepper class='stepper' num='{{light}}' data-type="{{2}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+</view>
+<view class="box">
+  <view class="content">调节土壤酸碱度</view>
+  <w-stepper class='stepper' num='{{ph}}' data-type="{{3}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+</view>
+<view class="box">
+  <view class="content">调节土壤电导率</view>
+  <w-stepper class='stepper' num='{{ec}}' data-type="{{4}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+</view>
+<view class="box">
+  <view class="content">调节土壤水分</view>
+  <w-stepper class='stepper' num='{{water}}' data-type="{{5}}" bind:minusClick='handleStep' bind:plusClick='handleStep' bind:manualClick='handleStep' />
+</view>
+
+<button type="primary" bindtap="handleUpdate">确认</button>

@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+<view class="logo">
+  <image src="/assets/start/logo.png" mode="widthFix"></image>
+</view>
+<view class="name">易植</view>
+<text class="des" space="emsp">  易植微信小程序是一款基于移动互联网的家庭种植帮手和植物管理平台。该小程序意在帮助用户解决缺乏植物培养知识、无暇照顾花草、室内环境状况不佳等家庭种植难题。配合相应的硬件设备进行使用，能有效地解决上述难题。小程序推送植物培育知识，自动检测植物光照、温度、湿度、土壤养分并进行自动补充，高效便捷地帮助用户种植自己的植物，可以使没有种植经验、工作繁忙无暇照顾植物的家庭种植者轻松驾驭家庭种植，享受乐趣。</text>
+<view class="copy">©2020 易植</view>

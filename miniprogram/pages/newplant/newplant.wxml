@@ -1,0 +1,28 @@
+<!--pages/newplant/newplant.wxml-->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="plantform">
+    <!-- <!-- <view class="form_item">
+      <view class="title">植物编号</view> -->
+      <input style='display:none' data-value='{{id}}' name="id" value='{{plant._id}}'></input>
+      <!-- <input placeholder="请输入植物编号" value="{{plant.NO}}" name='NO'></input> -->
+    <!-- </view>  -->
+    <view class="form_item">
+      <view class="title">植物名称</view>
+      <input placeholder="请输入植物名称" value="{{plant.name}}" name='name'></input>
+    </view>
+    <view class="form_image">
+      <view class="title">上传图片</view>
+      <view class="upimg">
+        <image src="/assets/newplant/addimage.png" wx:if="{{!isImage}}" bindtap="handleImage"></image>
+        <icon wx:if='{{isImage}}' type="cancel" bindtap="handleDel"></icon>
+        <input style='display:none' name='url' value='{{imgUrl}}'></input>
+        <image wx:if='{{isImage}}' src="{{imgUrl}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class='btn'>
+    <button size="mini" type='primary' form-type='submit' class='comfire'>确认</button>
+    <button size="mini" form-type='reset' class='cancle'>清除</button>
+  </view>
+</form>

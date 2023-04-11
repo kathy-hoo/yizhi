@@ -1,0 +1,23 @@
+<wxs module='w' src='../../utils/weather.wxs'></wxs>
+<view class='weather' bindtap="handleClickLink">
+  <view class='citdat'> 
+    <view class='city'>
+      <image class="location" src="/assets/weather/location.png" mode="widthFix"></image>
+      <text>{{weatherData.currentCity}}</text>
+    </view>
+    <view class='date'>{{weatherData.date}}</view>
+  </view>
+  <view class='weaout'>
+    <view class='temperature'>{{weatherData.temperature}}</view>
+    <view class='weain'>  
+      <view class='weatherDesc'>{{weatherData.wind}}</view>
+      <image src="{{w.weatherIcon(weatherData.weatherDesc)}}" mode="widthFix"></image>
+      <!-- <view class='weatherDesc'>{{weatherData.weatherDesc}}</view> -->
+      <view class='weatherDesc'>PM2.5:{{weatherData.pm25}}</view>
+    </view>
+  </view> 
+</view>
+
+<w-display plant='{{plant}}'/>
+
+<w-calendar currentYear='{{year}}' currentMonth="{{month}}" nowYear="{{year}}" nowMonth="{{month}}" nowDate="{{day}}" bindsendObj='getCalendarData'/>

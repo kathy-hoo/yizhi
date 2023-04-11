@@ -1,0 +1,19 @@
+/* pages/suggestion/suggestion.wxss */
+.border{
+  margin:30rpx 40rpx;
+  border: 2rpx solid #8bbd5e;
+  border-radius: 25rpx;
+  background: #fff;
+  padding: 30rpx 20rpx 50rpx 30rpx
+}
+.number{
+  position: absolute;
+  left:600rpx;
+  top: 410rpx;
+  font-size: 30rpx;
+  color: #cdcdcd;
+}
+.textword{
+  width: 100%;
+  /* background: khaki */
+}

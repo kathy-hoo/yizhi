@@ -1,0 +1,36 @@
+/* pages/log/log.wxss */
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.option{
+  margin-right: 20rpx;
+  margin-top: 20rpx
+}
+.log{
+  padding: 20rpx;
+  border-bottom: 2rpx solid #cdcdcd
+}
+.clear{
+  position: fixed;
+  bottom: 100rpx;
+  right: 30rpx;
+  width:80rpx;
+}
+.null{
+  height: 1100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  width: 15%;
+}
+.img image{
+  width: 100%
+}
+.word{
+  font-size: 30rpx;
+  color: #cdcdcd;
+}

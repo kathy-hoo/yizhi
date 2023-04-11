@@ -1,0 +1,25 @@
+/* pages/message/message.wxss */
+/* page{
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+.null{
+  height: 1100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  width: 15%;
+}
+.img image{
+  width: 100%
+}
+.word{
+  font-size: 30rpx;
+  color: #cdcdcd;
+}

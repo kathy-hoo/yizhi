@@ -1,0 +1,11 @@
+<!--pages/suggestion/suggestion.wxml-->
+<form bindsubmit="handleSubmit">
+    <view class='border'>
+      <textarea class='textword' placeholder="感谢您的反馈，我们会继续努力" auto-focus name='textword' maxlength="600" bindinput="inputs">
+      </textarea>
+      <text class='number'>{{count|0}}/600</text>
+    </view>
+    <view class='button'>
+      <button size='default' type='primary' form-type="submit" class='submit'>提交</button>
+    </view>
+  </form> 

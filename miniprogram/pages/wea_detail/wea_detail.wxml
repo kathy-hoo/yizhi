@@ -1,0 +1,213 @@
+<!--pages/wea_detail/wea_detail.wxml-->
+<wxs module='w' src='../../utils/weather.wxs'></wxs>
+<image class="bg" src="/assets/wea_detail/weather6.jpg"></image>
+<view class="weather">
+  <view class="top">
+    <view class="location">
+      <image src="/assets/weather/location.png" mode="widthFix"></image>
+      <text>{{location}}</text>
+    </view>
+    <view class="update">最近更新时间：{{update}}</view>
+    <view class="tmp">{{tmp}}℃</view>
+    <view class="tmp_m">{{tmp_max}}℃/{{tmp_min}}℃</view>
+    <view class="cond_txt">
+      <image src="{{w.weatherIcon(cond_txt)}}" mode="widthFix"></image>
+      <text>{{cond_txt}}</text>
+    </view>
+    <view class="qlty">空气 {{qlty}}</view>
+  </view>
+
+  <view class="hour">
+    <scroll-view class="hours_wea" scroll-x>
+      <block wx:for='{{hourly}}' wx:key='index'>
+        <view class="hour_wea">
+          <view class="time">{{item.time}}</view>
+          <image src="{{w.weatherIcon(item.cond_txt)}}" mode="widthFix"></image>
+          <!-- <view class="hcond_txt">{{item.cond_txt}}</view> -->
+          <view class="htmp">{{item.tmp}}℃</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <view class="days_wea">
+    <view class="day_wea" wx:for='{{daily}}' wx:key='index'>
+      <view class="date">{{item.date}}</view>
+      <image src="{{w.weatherIcon(item.cond_txt_d)}}" mode="widthFix"></image>
+      <!-- <view class="cond">{{item.cond_txt_d}}/{{item.cond_txt_n}}</view> -->
+      <view class="tmp_day">{{item.tmp_max}}℃/{{item.tmp_min}}℃</view>
+    </view>
+  </view>
+
+  <view class="index">
+    <view class="index_item item1">
+      <view class="img">
+        <image src="/assets/wea_detail/temp.png" mode="widthFix"></image>
+      </view>
+      <view>{{fl}}℃</view>
+      <view class="txt">体感温度</view>
+    </view>
+    <view class="index_item item1">
+      <view class="img">
+        <image src="/assets/wea_detail/wind.png" mode="widthFix"></image>
+      </view>
+      <view>{{wind_sc}}级</view>
+      <view class="txt">{{wind_dir}}</view>
+    </view>
+    <view class="index_item item1">
+      <view class="img">
+        <image src="/assets/wea_detail/hum.png" mode="widthFix"></image>
+      </view>
+      <view>{{hum}}</view>
+      <view class="txt">相对湿度</view>
+    </view>
+    <view class="index_item item1">
+      <view class="img">
+        <image src="/assets/wea_detail/pres.png" mode="widthFix"></image>
+      </view>
+      <view>{{pres}}hPa</view>
+      <view class="txt">气压</view>
+    </view>
+    <view class="index_item item1">
+      <view class="img">
+        <image src="/assets/wea_detail/vis.png" mode="widthFix"></image>
+      </view>
+      <view>{{vis}}km</view>
+      <view class="txt">能见度</view>
+    </view>
+    <view class="index_item item1">
+      <view class="img">
+        <image src="/assets/wea_detail/uv.png" mode="widthFix"></image>
+      </view>
+      <view>{{uv_brf}}</view>
+      <view class="txt">紫外线</view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="content">日出日落</view>
+    <view class="index">
+      <view class="index_item item2">
+        <view class="img">
+        <image src="/assets/wea_detail/sr.png" mode="widthFix"></image>
+      </view>
+        <view>{{sr}}</view>
+        <view class="txt">日出时间</view>
+      </view>
+      <view class="index_item item2">
+        <view class="img">
+        <image src="/assets/wea_detail/ss.png" mode="widthFix"></image>
+      </view>
+        <view>{{ss}}</view>
+        <view class="txt">日落时间</view>
+      </view>
+      <view class="index_item item2">
+        <view class="img">
+        <image src="/assets/wea_detail/mr.png" mode="widthFix"></image>
+      </view>
+        <view>{{mr}}</view>
+        <view class="txt">月出时间</view>
+      </view>
+      <view class="index_item item2">
+        <view class="img">
+        <image src="/assets/wea_detail/ms.png" mode="widthFix"></image>
+      </view>
+        <view>{{ms}}</view>
+        <view class="txt">月落时间</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="content">空气质量</view>
+    <view class="aqi">
+      <text class="des">空气质量指数</text>
+      <text class="dea">{{aqi}}</text>
+    </view>
+    <view class="aqi">
+      <text class="des">主要污染物</text>
+      <text class="dea">{{main}}</text>
+    </view>
+    <view class="index">
+      <view class="index_item item1">
+        <view>{{pm25}}</view>
+        <view class="txt">细微颗粒物</view>
+        <view class="tx">PM2.5</view>
+      </view>
+      <view class="index_item item1">
+        <view>{{pm10}}</view>
+        <view class="txt">可吸入颗粒物</view>
+        <view class="tx">PM10</view>
+      </view>
+      <view class="index_item item1">
+        <view>{{no2}}</view>
+        <view class="txt">二氧化氮</view>
+        <view class="tx">NO₂</view>
+      </view>
+      <view class="index_item item1">
+        <view>{{so2}}</view>
+        <view class="txt">二氧化硫</view>
+        <view class="tx">SO₂</view>
+      </view>
+      <view class="index_item item1">
+        <view>{{co}}</view>
+        <view class="txt">一氧化碳</view>
+        <view class="tx">CO</view>
+      </view>
+      <view class="index_item item1">
+        <view>{{o3}}</view>
+        <view class="txt">臭氧</view>
+        <view class="tx">O₃</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="content">生活指数</view>
+    <view class="index">
+      <view class="index_item item1">
+        <view class="img">
+        <image src="/assets/wea_detail/comf.png" mode="widthFix"></image>
+      </view>
+        <view>{{comf}}</view>
+        <view class="txt">舒适度指数</view>  
+      </view>
+      <view class="index_item item1">
+        <view class="img">
+        <image src="/assets/wea_detail/clothe.png" mode="widthFix"></image>
+      </view>
+        <view>{{drsg}}</view>
+        <view class="txt">穿衣指数</view>
+      </view>
+      <view class="index_item item1">
+        <view class="img">
+        <image src="/assets/wea_detail/flu.png" mode="widthFix"></image>
+      </view>
+        <view>{{flu}}</view>
+        <view class="txt">感冒指数</view>
+      </view>
+      <view class="index_item item1">
+        <view class="img">
+        <image src="/assets/wea_detail/sport.png" mode="widthFix"></image>
+      </view>
+        <view>{{sport}}</view>
+        <view class="txt">运动指数</view>
+      </view>
+      <view class="index_item item1">
+        <view class="img">
+        <image src="/assets/wea_detail/travel.png" mode="widthFix"></image>
+      </view>
+        <view>{{trav}}</view>
+        <view class="txt">旅游指数</view>
+      </view>
+      <view class="index_item item1">
+        <view class="img">
+        <image src="/assets/wea_detail/car.png" mode="widthFix"></image>
+      </view>
+        <view>{{cw}}</view>
+        <view class="txt">洗车指数</view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">易 · 植 · 天 · 气</view>
+</view>

@@ -1,0 +1,35 @@
+/* pages/information/information.wxss */
+.form_content{
+  /* border-top: solid 2rpx #cdcdcd; */
+  border-bottom: solid 2rpx #cdcdcd;
+  background: white;
+}
+.item{
+  margin: 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  padding:10rpx 0;
+  border-top: 2rpx solid #cdcdcd
+}
+.text{
+  color: #8bbd5e;
+  margin-right: 20rpx;
+}
+.item input{
+  font-size: 35rpx;
+  width:70%;
+  /* background: antiquewhite */
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  margin-top:50rpx;
+}
+.comfire{
+  width:100rpx;
+}
+.cancle{
+  width:100rpx;
+  background: red;
+  color: white
+}
